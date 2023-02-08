@@ -1,4 +1,4 @@
-name: Example Workflow
+name: Hello World (v1.0.0)
 
 on:
   workflow_call:
@@ -11,5 +11,5 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Name
-        run: echo ${{ inputs.name }}
+      - name: Hello World
+        run: echo "Hello ${{ inputs.name }}!"
